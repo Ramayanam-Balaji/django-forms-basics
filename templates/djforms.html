@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dj forms</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+            {{SFO.as_p}}            <!--as_p for representing each and every input tag as paragraph -->
+         <input type="submit">          <!--we use as_ul for unordered list-->
+    </form>                             <!-- we use as_table  it will be in horizontol line as by default-->
+</body>
+</html>
